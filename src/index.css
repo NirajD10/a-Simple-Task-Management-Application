@@ -1,13 +1,109 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+select {
+  background-color: transparent;
+  color: #9e78cf;
+  border: 1px solid #9e78cf;
+  padding: 8px;
+  font-size: 16px;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+select:focus {
+  border-color: #9e78cf;
+  outline: #9e78cf;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option {
+  background-color: transparent !important;
+  color: #9e78cf;
+}
+
+select:hover,
+select:focus {
+  border-color: #9e78cf;
+}
+
+select option:hover {
+  background-color: #9e78cf !important;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  appearance: none; /* Removes the default appearance */
+  width: 20px; /* Custom width */
+  height: 20px; /* Custom height */
+  background-color: #e0e0e0; /* Background when unchecked */
+  border: 2px solid #9378cf;
+  cursor: pointer;
+  border-radius: 4px; /* Optional: rounded corners */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+/* Style for the checked state */
+input[type="checkbox"]:checked {
+  background-color: #9378cf;
+  border-color: #9378cf;
+  transition: all 0.3s;
+}
+
+/* Optional: Add a checkmark when checked */
+input[type="checkbox"]:checked::before {
+  content: "✓"; /* Checkmark symbol */
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1; /* Ensures vertical centering */
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  transition: all 0.3s;
+}
+
+/* CSS TRANSISITION */
+.task-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.task-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.task-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.task-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
 }
