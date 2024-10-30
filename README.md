@@ -20,7 +20,7 @@ A simple task management application built with React.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/task-management.git
+   git clone https://github.com/NirajD10/task-management.git
    ```
 
 2. Navigate to the project directory
