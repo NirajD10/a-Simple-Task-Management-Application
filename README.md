@@ -13,7 +13,7 @@ A simple task management application built with React.
 - **React**: A JavaScript library for building user interfaces.
 - **React Toastify**: For displaying notifications.
 - **UUID**: For generating unique IDs for tasks.
-- **React CSS Transition**: For testing components.
+- **React CSS Transition**: For css components.
 
 ## Installation
 
