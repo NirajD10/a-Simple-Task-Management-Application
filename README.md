@@ -11,10 +11,9 @@ A simple task management application built with React.
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
-- **React Router**: For routing in the application (if used).
 - **React Toastify**: For displaying notifications.
 - **UUID**: For generating unique IDs for tasks.
-- **React Testing Library**: For testing components.
+- **React CSS Transition**: For testing components.
 
 ## Installation
 
